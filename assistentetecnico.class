@@ -1,0 +1,9 @@
+package atividade_1;
+
+public class assistentetecnico extends funcionario{
+
+	public double calculasalario() {
+		return this.getSalario()*1.2;
+		
+	}
+}
