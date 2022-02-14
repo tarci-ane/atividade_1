@@ -1,0 +1,45 @@
+package atividade_1;
+
+public class assistenteadministrativo extends funcionario{
+
+	private int martricula;
+	private String turno;
+	
+	public assistenteadministrativo() {
+				
+	}
+	
+	public assistenteadministrativo(String nome, double salario, String cargo, int martricula, String turno) {
+		super(nome, salario, cargo);
+		this.martricula = martricula;
+		this.turno = turno;
+	}
+
+	public int getMartricula() {
+		return martricula;
+	}
+
+	public void setMartricula(int martricula) {
+		this.martricula = martricula;
+	}
+
+	public String getTurno() {
+		return turno;
+	}
+
+	public void setTurno(String turno) {
+		this.turno = turno;
+	}
+	
+	public double calculasalario() {
+		if (this.getTurno().equals("noturno")){
+			return this.getSalario()*1.3;
+			
+		}
+	
+		else {
+			return this.getSalario();
+			
+		}
+	}
+}
