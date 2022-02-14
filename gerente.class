@@ -1,0 +1,11 @@
+package atividade_1;
+
+public class gerente extends funcionario {
+
+	public double calculasalario() {
+		return this.getSalario() *1.5;
+		
+	}
+	
+	
+}
